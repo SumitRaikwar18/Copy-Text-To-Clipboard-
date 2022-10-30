@@ -5,64 +5,77 @@
     <meta charset="UTF-8">
     <title> Copy Code To Clipboard </title>
     <link rel="stylesheet" href="style.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-  <div class="text-boxes">
-    <div class="text-box HTMLBox">
-      <div class="topic">HTML Code:</div>
-      <textarea id="HTMLBox" readonly >
-        Add HTML Code Here
-      </textarea>
-      <button id="HTMLButton">Copy Codes</button>
-    </div>
-    <div class="text-box CSSBox">
-      <div class="topic">CSS Code:</div>
-      <textarea id="CSSBox" readonly >
-        Add CSS codes Here
-      </textarea>
-      <button id="CSSButton">Copy Codes</button>
-    </div>
-    <div class="text-box JSBox">
-      <div class="topic">JavaScript Code:</div>
-      <textarea id="JSBox" readonly >
-        Add JavaScript Code here
-      </textarea>
-      <button id="JSButton">Copy  Codes</button>
-    </div>
-  </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-box">
+        <img src="/logo.jpg" alt="" class="logo" />
+      </div>
+    </header>
+    <main>
+      <div class="text-boxes">
+        <div class="text-box HTMLBox">
+          <div class="topic">HTML Code:</div>
+          <textarea id="HTMLBox" readonly >
+            Add HTML Code Here
+          </textarea>
+          <button id="HTMLButton">Copy Codes</button>
+        </div>
+        <div class="text-box CSSBox">
+          <div class="topic">CSS Code:</div>
+          <textarea id="CSSBox" readonly >
+            Add CSS codes Here
+          </textarea>
+          <button id="CSSButton">Copy Codes</button>
+        </div>
+        <div class="text-box JSBox">
+          <div class="topic">JavaScript Code:</div>
+          <textarea id="JSBox" readonly >
+            Add JavaScript Code here
+          </textarea>
+          <button id="JSButton">Copy  Codes</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-box">
+        <span class="title">COPY CODES <span class="color-blue">CLIPBOARD</span></span> | <a href="https://github.com/SumitRaikwar18/Copy-Text-To-Clipboard-">View on GitHub</a>
+      </div>
+    </footer>
 
-  <script>
-  // HTML BOx JS Code
-    let HTMLBox = document.getElementById("HTMLBox");
-    let HTMLButton = document.getElementById("HTMLButton");
+    </footer>
 
-    HTMLButton.onclick = function() {
-      HTMLBox.select();
-      document.execCommand("copy");
-      HTMLButton.innerText = "Codes Copied"
-    }
+    <script>
+    // HTML BOx JS Code
+      let HTMLBox = document.getElementById("HTMLBox");
+      let HTMLButton = document.getElementById("HTMLButton");
 
-    // CSS Box Js Code
-      let CSSBox = document.getElementById("CSSBox");
-      let CSSButton = document.getElementById("CSSButton");
-
-      CSSButton.onclick = function() {
-        CSSBox.select();
+      HTMLButton.onclick = function() {
+        HTMLBox.select();
         document.execCommand("copy");
-        CSSButton.innerText = "Codes Copied"
+        HTMLButton.innerText = "Codes Copied"
       }
-    // JavaScript BOx JS Code
-      let JSBox = document.getElementById("JSBox");
-      let JSButton = document.getElementById("JSButton");
 
-      JSButton.onclick = function() {
-        JSBox.select();
-        document.execCommand("copy");
-        JSButton.innerText = "Codes Copied"
-      }
-  </script>
+      // CSS Box Js Code
+        let CSSBox = document.getElementById("CSSBox");
+        let CSSButton = document.getElementById("CSSButton");
 
+        CSSButton.onclick = function() {
+          CSSBox.select();
+          document.execCommand("copy");
+          CSSButton.innerText = "Codes Copied"
+        }
+      // JavaScript BOx JS Code
+        let JSBox = document.getElementById("JSBox");
+        let JSButton = document.getElementById("JSButton");
 
-</body>
+        JSButton.onclick = function() {
+          JSBox.select();
+          document.execCommand("copy");
+          JSButton.innerText = "Codes Copied"
+        }
+    </script>
+
+  </body>
 </html>
